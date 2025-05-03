@@ -5,9 +5,7 @@ import React from "react";
 
 export const BackgroundLines = ({ children, className, svgOptions }) => {
   return (
-    <div
-      className={cn("h-[20rem] md:h-screen w-full dark:bg-black", className)}
-    >
+    <div className={cn("md:h-screen w-full dark:bg-black", className)}>
       <SVG svgOptions={svgOptions} />
       {children}
     </div>

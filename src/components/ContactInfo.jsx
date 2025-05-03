@@ -3,57 +3,54 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 export function ContactInfo() {
   return (
-    <div>
-      <h2 className="text-3xl font-bold">Get In Touch</h2>
-      <div className="w-20 h-1 bg-blue-600 mt-2 mb-4" />
-      <p className="text-sm text-muted-foreground mb-6">
-        Have a question or want to work together? Feel free to drop me a
-        message. I'd love to hear from you!
-      </p>
+    <>
+      <div className="flex flex-wrap">
+        <div>
+          <h3 className="font-semibold mb-1">Contact Information</h3>
+          <p className="text-sm text-muted-foreground mb-4">
+            Fill up the form and I’ll get back to you as soon as possible.
+          </p>
 
-      <h3 className="font-semibold mb-1">Contact Information</h3>
-      <p className="text-sm text-muted-foreground mb-4">
-        Fill up the form and I’ll get back to you as soon as possible.
-      </p>
+          <ul className="space-y-4 text-sm">
+            <li className="flex items-start gap-3">
+              <MdEmail className="text-blue-500 text-xl mt-0.5" />
+              <div>
+                <strong>Email</strong>
+                <div>aathifzahir12@gmail.com</div>
+              </div>
+            </li>
+            <li className="flex items-start gap-3">
+              <MdPhone className="text-blue-500 text-xl mt-0.5" />
+              <div>
+                <strong>Phone</strong>
+                <div>+94 76 527 1411</div>
+              </div>
+            </li>
+            <li className="flex items-start gap-3">
+              <MdLocationOn className="text-blue-500 text-xl mt-0.5" />
+              <div>
+                <strong>Location</strong>
+                <div>Colombo, Sri Lanka</div>
+              </div>
+            </li>
+          </ul>
+        </div>
 
-      <ul className="space-y-4 text-sm">
-        <li className="flex items-start gap-3">
-          <MdEmail className="text-blue-500 text-xl mt-0.5" />
-          <div>
-            <strong>Email</strong>
-            <div>aathifzahir12@gmail.com</div>
+        <div className="mt-6">
+          <h4 className="font-semibold mb-2">Connect with me</h4>
+          <div className="flex gap-4">
+            <a href="#" className="text-blue-500 hover:text-blue-700">
+              <FaGithub size={24} />
+            </a>
+            <a href="#" className="text-blue-500 hover:text-blue-700">
+              <FaLinkedin size={24} />
+            </a>
+            <a href="#" className="text-blue-500 hover:text-blue-700">
+              <FaEnvelope size={24} />
+            </a>
           </div>
-        </li>
-        <li className="flex items-start gap-3">
-          <MdPhone className="text-blue-500 text-xl mt-0.5" />
-          <div>
-            <strong>Phone</strong>
-            <div>+94 76 527 1411</div>
-          </div>
-        </li>
-        <li className="flex items-start gap-3">
-          <MdLocationOn className="text-blue-500 text-xl mt-0.5" />
-          <div>
-            <strong>Location</strong>
-            <div>Colombo, Sri Lanka</div>
-          </div>
-        </li>
-      </ul>
-
-      <div className="mt-6">
-        <h4 className="font-semibold mb-2">Connect with me</h4>
-        <div className="flex gap-4">
-          <a href="#" className="text-blue-500 hover:text-blue-700">
-            <FaGithub size={24} />
-          </a>
-          <a href="#" className="text-blue-500 hover:text-blue-700">
-            <FaLinkedin size={24} />
-          </a>
-          <a href="#" className="text-blue-500 hover:text-blue-700">
-            <FaEnvelope size={24} />
-          </a>
         </div>
       </div>
-    </div>
+    </>
   );
 }

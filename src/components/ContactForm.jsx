@@ -1,6 +1,6 @@
 export const ContactForm = () => {
   return (
-    <form className="bg-[#0f111a] border border-gray-700 p-8 rounded-md w-full max-w-3xl">
+    <form className="border border-gray-700 p-8 rounded-md w-full max-w-3xl">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
           <label className="block text-sm font-medium text-white mb-1">

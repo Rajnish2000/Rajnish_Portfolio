@@ -1,21 +1,28 @@
 import React from "react";
-import { JavascriptLogo } from "./models/tech_models/JavascriptLogo";
 const techs = [
   {
     name: "HTML",
-    icon: "",
+    icon: "/images/logos/html5.png",
   },
-  // { name: "CSS", icon: "/tech/css.png" },
-  // { name: "JavaScript", icon: "/tech/js.png" },
-  // { name: "Tailwind CSS", icon: "/tech/tailwind.png" },
-  // { name: "Express JS", icon: "/tech/express.png" },
-  // { name: "Node JS", icon: "/tech/node.png" },
-  // { name: "React + Native", icon: "/tech/react.png" },
-  // { name: "MongoDB", icon: "/tech/mongodb.png" },
-  // { name: "JWT", icon: "/tech/jwt.png" },
-  // { name: "PostgreSQL", icon: "/tech/postgres.png" },
-  // { name: "TypeScript", icon: "/tech/ts.png" },
-  // { name: "Docker", icon: "/tech/docker.png" },
+  { name: "Angular JS", icon: "/images/logos/angular.png" },
+  { name: "Bootstrap", icon: "/images/logos/Bootstrap.png" },
+  { name: "Firebase", icon: "/images/logos/firebase.png" },
+  { name: "JavaScript", icon: "/images/logos/js.png" },
+  { name: "Python", icon: "/images/logos/pythonlogo.png" },
+  { name: "Tailwind CSS", icon: "/images/logos/tailwindcss.png" },
+  { name: "CSS", icon: "/images/logos/css.png", scale: "scale-x-200" },
+  { name: "Node JS", icon: "/images/logos/Nodejs.png" },
+  { name: "Nest JS", icon: "/images/logos/Nestjs.png" },
+  { name: "ReactJS", icon: "/images/logos/reactjs.png" },
+  { name: "MongoDB", icon: "/images/logos/mongoDB.png" },
+  { name: "Redux", icon: "/images/logos/redux.png" },
+  { name: "Redis", icon: "/images/logos/redis.png" },
+  { name: "C++", icon: "/images/logos/c++.png", scale: "" },
+  { name: "TypeScript", icon: "/images/logos/typescript.png" },
+  { name: "Jquery", icon: "/images/logos/jquery.png" },
+  { name: "Three Js", icon: "/images/logos/three.png", scale: "" },
+  { name: "Git", icon: "/images/logos/git.png" },
+  { name: "GitHub", icon: "/images/logos/github.png" },
 ];
 
 export default function TechStack() {
@@ -26,10 +33,11 @@ export default function TechStack() {
           key={index}
           className="bg-gray-700 rounded-xl flex flex-col items-center justify-center p-4 shadow hover:scale-105 transition-transform"
         >
-          {/* <img src={tech.icon} alt={tech.name} className="w-12 h-12 mb-2" /> */}
-          {/* <div>{tech.icon}</div> */}
-          {/* <div className="w-3xl h-4/5"></div> */}
-          <JavascriptLogo />
+          <img
+            src={tech.icon}
+            alt={tech.name}
+            className={`w-12 h-12 ${tech.scale ?? "scale-400"} mb-4`}
+          />
           <p className="text-sm text-gray-200">{tech.name}</p>
         </div>
       ))}

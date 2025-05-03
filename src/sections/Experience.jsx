@@ -3,6 +3,7 @@ import { expCards } from "./../constants";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { BackgroundLines } from "@/components/ui/background-lines";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -36,21 +37,22 @@ const Experience = () => {
     });
   }, []);
   return (
-    <section className="w-full md:mt-20 mt-20 section-padding xl:px-0">
+    <section className="w-full md:mt-20 mt-20 section-padding xl:px-0 relative">
       <div className="w-full h-full md:px-20 px-5">
         <div className="w-full">
           <h2 className="text-4xl font-bold mb-4 border-b-4 border-blue-500 inline-block">
             Work Experience
           </h2>
         </div>
-        <div className="mt-32 relative">
+        {/* <BackgroundLines> */}
+        <div className="mt-10 relative">
           <div className="relative z-50 xl:space-y-32 space-y-10">
             {expCards.map((card, i) => {
               return (
                 <div className="xl:w-4/6" key={i}>
                   <div className="flex item-start">
                     <div className="timeline-wrapper">
-                      <div className="timeline" />
+                      <div className="timeline bg-[#020818]" />
                       <div className="gradient-line w-1 h-full" />
                     </div>
                     <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20">
@@ -78,6 +80,7 @@ const Experience = () => {
             })}
           </div>
         </div>
+        {/* </BackgroundLines> */}
       </div>
     </section>
   );

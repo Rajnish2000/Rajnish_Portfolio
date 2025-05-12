@@ -60,7 +60,7 @@ const About = () => {
         <div className="lg:w-1/3 flex flex-col items-center text-center p-6 rounded-xl bg-[#0f172a]">
           <div className="relative">
             <img
-              src="/images/client6.png"
+              src="/images/myimage.jpg"
               alt="Rajnish Singh"
               className="w-32 h-32 object-cover rounded-full border-4 border-white"
             />

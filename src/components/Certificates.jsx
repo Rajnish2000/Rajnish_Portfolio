@@ -10,34 +10,24 @@ import {
 import { motion } from "motion/react";
 const certificates = [
   {
-    title: "Infosys Springboard",
-    image:
-      "https://images.unsplash.com/photo-1517322048670-4fba75cbbb62?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Google Cloud BootCamp",
+    image: "/images/certificates/gcp.png",
   },
   {
-    title: "Udemy Bootcamp",
-    image:
-      "https://images.unsplash.com/photo-1573790387438-4da905039392?q=80&w=3425&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "HP",
+    image: "/images/certificates/HP.png",
   },
   {
-    title: "Unnati Foundation",
-    image:
-      "https://images.unsplash.com/photo-1555400038-63f5ba517a47?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Full Stack Certification",
+    image: "/images/certificates/MERN.png",
   },
   {
-    title: "Unnati Foundation",
-    image:
-      "https://images.unsplash.com/photo-1555400038-63f5ba517a47?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Python",
+    image: "/images/certificates/Python.png",
   },
   {
-    title: "Unnati Foundation",
-    image:
-      "https://images.unsplash.com/photo-1555400038-63f5ba517a47?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    title: "Unnati Foundation",
-    image:
-      "https://images.unsplash.com/photo-1555400038-63f5ba517a47?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Machine Learning And Data Science",
+    image: "/images/certificates/MLANDDS.png",
   },
 ];
 
@@ -49,26 +39,26 @@ export default function Certificates() {
   }, [showMore]);
   return (
     <div>
-      <div className="grid md:grid-cols-3 gap-6">
+      <div className="grid md:grid-cols-3 gap-16">
         {(showMore ? certificates : certificateTemp).map((cert, index) => (
           <div key={index} className="bg-gray-700 rounded-xl overflow-hidden">
             <Modal>
-              <ModalTrigger className="flex justify-center group/modal-btn">
+              <ModalTrigger className="flex justify-center group/modal-btn p-2 ml-1 ">
                 <img
                   src={cert.image}
                   alt={cert.title}
-                  className="h-60 w-[100%] object-cover my-2"
+                  className="h-60 w-full object-cover my-2"
                 />
               </ModalTrigger>
-              <ModalBody className="relative w-full h-screen p-0 m-0">
+              <ModalBody className="relative w-[100vw] h-screen p-0 m-0">
                 <ModalContent>
                   <div className="flex justify-center items-center w-full h-full">
                     <img
                       src={cert.image}
                       alt="bali images"
-                      width="500"
-                      height="500"
-                      className="rounded-lg h-[100%] w-[100%] md:h-full md:w-full object-cover shrink-0"
+                      width="900"
+                      height="400"
+                      className="rounded-lg h-[100%] md:h-full object-contain shrink-0"
                     />
                   </div>
                 </ModalContent>

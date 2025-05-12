@@ -1,9 +1,10 @@
 import { ContactForm } from "../components/ContactForm";
 import { ContactInfo } from "../components/ContactInfo";
+import AvatarModelExperience from "../components/models/header_models/AvatarModelExperience";
 
 const Contact = () => {
   return (
-    <section className="gap-10 justify-between text-white py-10 px-20">
+    <section className="gap-10 justify-between text-white py-10 px-20 h-full mb-20">
       <div className="w-full">
         <h2 className="text-3xl font-bold">Get In Touch</h2>
         <div className="w-45 h-1 bg-blue-600 mt-2 mb-4" />
@@ -15,9 +16,13 @@ const Contact = () => {
           Fill up the form and I’ll get back to you as soon as possible.
         </p>
       </div>
-      <div className="md:w-full mt-15">
-        {/* <ContactInfo /> */}
-        <ContactForm />
+      <div className="w-full h-full justify-around sm:justify-center flex flex-wrap">
+        <div className="h-full h-full mt-15 relative">
+          <ContactForm />
+        </div>
+        <div className="w-2xl h-[60vh] mt-17 relative">
+          <AvatarModelExperience />
+        </div>
       </div>
     </section>
   );

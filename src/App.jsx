@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Header from "./sections/Header";
 import About from "./sections/About";
 import Experience from "./sections/Experience";
@@ -9,8 +9,14 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { useGSAP } from "@gsap/react";
+import NavBar from "./components/Navbar";
 gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollSmoother);
 const App = () => {
+  const [scrollValue, setScrollValue] = useState(window.scrollY);
+  useEffect(() => {
+    console.log(scrollValue);
+    setScrollValue(window.screenY);
+  }, []);
   const main = useRef();
   const smoother = useRef();
   useGSAP(
@@ -29,6 +35,7 @@ const App = () => {
         id="smooth-wrapper"
         ref={main}
       >
+        <NavBar />
         <div id="smooth-content">
           <Header />
           <About />

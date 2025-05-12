@@ -20,8 +20,8 @@ const Header = () => {
 
   return (
     <section id="hero" className="relative overflow-hidden">
-      <div className="hero-layout">
-        <section className="flex flex-col md:flex-row items-center justify-between px-10 py-20">
+      <div className="relative z-10 xl:mt-20 mt-32 md:h-dvh h-[100vh] flex md:items-center items-start justify-between">
+        <div className="flex flex-wrap items-center justify-between px-10 py-20 md:px-30">
           {/* Text and Buttons */}
           <div className="max-w-xl px-8" ref={textContainerRef}>
             <p className="text-blue-400">Hello! I'm</p>
@@ -47,14 +47,16 @@ const Header = () => {
           </div>
 
           {/* 3D Model (No Animation Here) */}
-          <figure>
-            <ShootingStars />
-            <StarsBackground />
-            <div className="hero-3d-layout">
-              <HeaderModelExperience />
-            </div>
-          </figure>
-        </section>
+          <div className="sm:w-full ">
+            <figure>
+              <ShootingStars />
+              <StarsBackground />
+              <div className="hero-3d-layout sm:mt-10">
+                <HeaderModelExperience />
+              </div>
+            </figure>
+          </div>
+        </div>
       </div>
     </section>
   );

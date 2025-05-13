@@ -4,7 +4,10 @@ import AvatarModelExperience from "../components/models/header_models/AvatarMode
 
 const Contact = () => {
   return (
-    <section className="gap-10 justify-between text-white py-10 px-20 h-full mb-20">
+    <section
+      className="gap-10 justify-between text-white py-10 px-20 h-full mb-20"
+      id="contacts"
+    >
       <div className="w-full">
         <h2 className="text-3xl font-bold">Get In Touch</h2>
         <div className="w-45 h-1 bg-blue-600 mt-2 mb-4" />

@@ -6,13 +6,15 @@ import {
   FaMapMarkerAlt,
   FaDiscord,
   FaYoutube,
+  FaFacebook,
+  FaGitlab,
 } from "react-icons/fa";
-import { SiMedium, SiRevue } from "react-icons/si";
+import { SiGooglecloud, SiLeetcode, SiMedium, SiRevue } from "react-icons/si";
 
 export default function Footer() {
   return (
     <footer className="border border-gray-500 px-4 md:px-20 py-10 text-sm">
-      <div className="grid md:grid-cols-4 grid-cols-1 gap-10">
+      <div className="grid md:grid-cols-4 grid-cols-1 gap-10 justify-center m-auto">
         {/* Contact Details */}
         <div>
           <h4 className="font-semibold mb-4">CONTACT DETAILS</h4>
@@ -34,7 +36,7 @@ export default function Footer() {
 
         {/* Services */}
         <div>
-          <h4 className="font-semibold mb-4">SERVICES</h4>
+          <h4 className="font-semibold mb-4">DEVELOPMENT SKILLS</h4>
           <ul className="space-y-2">
             <li>Website Development</li>
             <li>App Development</li>
@@ -57,12 +59,42 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold mb-4">FOLLOW US</h4>
           <div className="flex gap-7 flex-wrap">
-            <FaLinkedin className="text-xl" />
-            <FaGithub className="text-xl" />
-            <SiMedium className="text-xl" />
-            <SiRevue className="text-xl" />
-            <FaDiscord className="text-xl" />
-            <FaYoutube className="text-xl" />
+            <a
+              href="https://www.linkedin.com/in/rajnish-singh-5b7a371a6/"
+              target="_blank"
+            >
+              <FaLinkedin className="text-xl" />
+            </a>
+            <a href="https://github.com/Rajnish2000" target="_blank">
+              <FaGithub className="text-xl" />
+            </a>
+            <a href="https://gitlab.com/rajsinghdj4" target="_blank">
+              <FaGitlab className="text-xl" />
+            </a>
+            <a
+              href="https://www.facebook.com/mr.rajnishkumarsingh/"
+              target="_blank"
+            >
+              <FaFacebook className="text-xl" />
+            </a>
+            <a href="https://leetcode.com/u/rajnish21/" target="_blank">
+              <SiLeetcode className="text-xl" />
+            </a>
+            <a href="https://discord.com/channels/@me" target="_blank">
+              <FaDiscord className="text-xl" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/rajnish-singh-5b7a371a6/"
+              target="_blank"
+            >
+              <FaYoutube className="text-xl" />
+            </a>
+            <a
+              href="https://www.cloudskillsboost.google/public_profiles/8e150d20-c04c-4a81-b530-7e32991323cc"
+              target="_blank"
+            >
+              <SiGooglecloud className="text-xl" />
+            </a>
           </div>
         </div>
       </div>

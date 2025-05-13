@@ -31,7 +31,7 @@ export function OfficeWorker(props) {
   }, [actions]);
   return (
     <>
-      <PerspectiveCamera makeDefault position={[18, 0, 4]} fov={30}>
+      <PerspectiveCamera makeDefault position={[-18, 0, 4]} fov={30}>
         {/* OrbitControls to enable zoom and pan */}
         <OrbitControls minDistance={25} maxDistance={50} />
       </PerspectiveCamera>

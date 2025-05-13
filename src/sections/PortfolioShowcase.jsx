@@ -8,7 +8,7 @@ const PortfolioShowcase = () => {
   const [activeTab, setActiveTab] = useState("projects");
 
   return (
-    <div className="min-h-screen text-white">
+    <div className="min-h-screen text-white" id="project">
       <div className="text-center py-10">
         <h1 className="text-4xl font-bold text-violet-400">
           Portfolio Showcase

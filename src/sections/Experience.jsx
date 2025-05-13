@@ -37,7 +37,10 @@ const Experience = () => {
     });
   }, []);
   return (
-    <section className="w-full md:mt-20 mt-20 section-padding xl:px-0 relative">
+    <section
+      className="w-full md:mt-20 mt-20 section-padding xl:px-0 relative"
+      id="experience"
+    >
       <div className="w-full h-full md:px-20 px-5">
         <div className="w-full">
           <h2 className="text-4xl font-bold mb-4 border-b-4 border-blue-500 inline-block">
@@ -49,7 +52,7 @@ const Experience = () => {
           <div className="relative z-50 xl:space-y-32 space-y-10">
             {expCards.map((card, i) => {
               return (
-                <div className="xl:w-4/6" key={i}>
+                <div className="xl:w-5/6" key={i}>
                   <div className="flex item-start">
                     <div className="timeline-wrapper">
                       <div className="timeline bg-[#020818]" />
@@ -57,7 +60,11 @@ const Experience = () => {
                     </div>
                     <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20">
                       <div className="timeline-logo">
-                        <img src={card.logoPath} alt="logo" />
+                        <img
+                          src={card.logoPath}
+                          alt="logo"
+                          className="rounded-4xl"
+                        />
                       </div>
                       <div className="">
                         <h1 className="font-semibold text-3xl">{card.title}</h1>

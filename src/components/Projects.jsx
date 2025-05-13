@@ -3,100 +3,36 @@ import Card from "./Card";
 
 const projects = [
   {
-    title: "IntervueAI",
+    title: "MovieFlix",
     description:
-      "Real-time mock interviews with AI. No forms or clicks, just natural, personalized conversations.",
-    image: "/images/intervueai.png",
+      "A movie app crafted in React and TailwindCSS, optimizing development through Vite for fast and efficient project building.",
+    image: "/images/projectImage/TMDB.png",
+    demo: "https://the-movie-database-app.vercel.app/",
+    details: "#",
+  },
+  {
+    title: "IDOC_TOOL",
+    description:
+      "The IDOC_TOOL project is an application designed to detect and extract text from images using Python libraries like OpenCV, Tesseract, and Streamlit.",
+    image: "/images/projectImage/IDOC_TOOL.png",
     demo: "#",
     details: "#",
   },
   {
-    title: "Blendy",
+    title: "Urbanutopia",
     description:
-      "A social app where you can connect in real-time, log in with one click, share moments, posts instantly.",
-    image: "/images/blendy.png",
-    demo: "#",
+      "`urbanutopia` is a RESTful API that connects property owners looking to rent their spaces with individuals seeking short-term accommodation.",
+    image: "/images/projectImage/urbanutopia.png",
+    demo: "https://urbanutopia-q4lw.onrender.com/",
     details: "#",
   },
   {
-    title: "WATCHit",
+    title: "BlogApp",
     description:
-      "A video streaming app made for easy, personal entertainment and everything you love to binge.",
-    image: "/images/watchit.png",
+      "This project enables users to Manages posts with CRUD, commenting, replies, and robust security: authentication, OTP, 2FA, and captcha.",
+    image: "/images/projectImage/BlogApp.png",
     demo: "#",
-    details: "#",
-  },
-  {
-    title: "WATCHit",
-    description:
-      "A video streaming app made for easy, personal entertainment and everything you love to binge.",
-    image: "/images/watchit.png",
-    demo: "#",
-    details: "#",
-  },
-  {
-    title: "WATCHit",
-    description:
-      "A video streaming app made for easy, personal entertainment and everything you love to binge.",
-    image: "/images/watchit.png",
-    demo: "#",
-    details: "#",
-  },
-  {
-    title: "WATCHit",
-    description:
-      "A video streaming app made for easy, personal entertainment and everything you love to binge.",
-    image: "/images/watchit.png",
-    demo: "#",
-    details: "#",
-  },
-  {
-    title: "WATCHit",
-    description:
-      "A video streaming app made for easy, personal entertainment and everything you love to binge.",
-    image: "/images/watchit.png",
-    demo: "#",
-    details: "#",
-  },
-  {
-    title: "WATCHit",
-    description:
-      "A video streaming app made for easy, personal entertainment and everything you love to binge.",
-    image: "/images/watchit.png",
-    demo: "#",
-    details: "#",
-  },
-  {
-    title: "WATCHit",
-    description:
-      "A video streaming app made for easy, personal entertainment and everything you love to binge.",
-    image: "/images/watchit.png",
-    demo: "#",
-    details: "#",
-  },
-  {
-    title: "WATCHit",
-    description:
-      "A video streaming app made for easy, personal entertainment and everything you love to binge.",
-    image: "/images/watchit.png",
-    demo: "#",
-    details: "#",
-  },
-  {
-    title: "WATCHit",
-    description:
-      "A video streaming app made for easy, personal entertainment and everything you love to binge.",
-    image: "/images/watchit.png",
-    demo: "#",
-    details: "#",
-  },
-  {
-    title: "WATCHit",
-    description:
-      "A video streaming app made for easy, personal entertainment and everything you love to binge.",
-    image: "/images/watchit.png",
-    demo: "#",
-    details: "#",
+    details: "https://gitlab.com/rajsinghdj4/angularproject",
   },
 ];
 

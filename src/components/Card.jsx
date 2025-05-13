@@ -12,7 +12,11 @@ const Card = ({ project }) => (
       <h2 className="text-lg font-semibold mb-2">{project.title}</h2>
       <p className="text-sm text-gray-300 mb-4">{project.description}</p>
       <div className="flex justify-between text-sm">
-        <a href={project.demo} className="text-violet-400 hover:underline">
+        <a
+          href={project.demo}
+          className="text-violet-400 hover:underline"
+          target="_blank"
+        >
           <span className="inline-flex gap-1 items-center">
             Live Demo <FiExternalLink />
           </span>

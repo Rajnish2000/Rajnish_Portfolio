@@ -9,7 +9,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { useGSAP } from "@gsap/react";
-import NavBar from "./components/Navbar";
+import NavBar from "./components/NavBar";
 gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollSmoother);
 const App = () => {
   const [scrollValue, setScrollValue] = useState(window.scrollY);

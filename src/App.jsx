@@ -37,11 +37,11 @@ const App = () => {
       >
         <NavBar />
         <div id="smooth-content">
-          <Header />
-          <About />
-          <Experience />
-          <Project />
-          <Contact />
+          <Header id="hero" />
+          <About id="about" />
+          <Experience id="experience" />
+          <Project id="project" />
+          <Contact id="contacts" />
           <Footer />
         </div>
       </div>

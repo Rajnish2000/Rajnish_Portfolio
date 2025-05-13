@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { BsGithub } from "react-icons/bs";
 import { FiExternalLink } from "react-icons/fi";
 const Card = ({ project }) => (
   <div className="bg-gray-700 rounded-xl overflow-hidden shadow-lg">
@@ -24,9 +25,10 @@ const Card = ({ project }) => (
         <a
           type="button"
           href={project.details}
-          className="text-gray-300 hover:underline bg-gray-700 border border-gray-500 px-2 py-1 rounded-md md:text-sm"
+          target="_blank"
+          className="text-gray-300 hover:underline bg-gray-700 border border-gray-500 px-2 py-1 rounded-md md:text-sm flex flex-row items-center gap-x-1"
         >
-          Details →
+          <BsGithub /> GitHub <FiExternalLink />
         </a>
       </div>
     </div>

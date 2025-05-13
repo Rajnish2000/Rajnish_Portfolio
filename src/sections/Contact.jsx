@@ -5,7 +5,7 @@ import AvatarModelExperience from "../components/models/header_models/AvatarMode
 const Contact = () => {
   return (
     <section
-      className="gap-10 justify-between text-white py-10 px-20 h-full mb-20"
+      className="gap-10 justify-between text-white py-10 px-20 h-full mb-10"
       id="contacts"
     >
       <div className="w-full">
@@ -15,12 +15,12 @@ const Contact = () => {
           Have a question or want to work together? Feel free to drop me a
           message. I'd love to hear from you!
         </p>
-        <p className="text-sm text-muted-foreground mb-5 text-lg">
+        <p className="text-muted-foreground mb-5 text-md">
           Fill up the form and I’ll get back to you as soon as possible.
         </p>
       </div>
-      <div className="w-full h-full justify-around sm:justify-center flex flex-wrap">
-        <div className="h-full h-full mt-15 relative">
+      <div className="w-full h-full justify-between sm:justify-center md:flex flex-wrap">
+        <div className="h-full mt-15 relative">
           <ContactForm />
         </div>
         <div className="w-2xl h-[60vh] mt-17 relative">

@@ -8,7 +8,7 @@ const projects = [
       "A movie app crafted in React and TailwindCSS, optimizing development through Vite for fast and efficient project building.",
     image: "/images/projectImage/TMDB.png",
     demo: "https://the-movie-database-app.vercel.app/",
-    details: "#",
+    details: "https://github.com/Rajnish2000/TMDB-movies_app",
   },
   {
     title: "IDOC_TOOL",
@@ -16,7 +16,7 @@ const projects = [
       "The IDOC_TOOL project is an application designed to detect and extract text from images using Python libraries like OpenCV, Tesseract, and Streamlit.",
     image: "/images/projectImage/IDOC_TOOL.png",
     demo: "#",
-    details: "#",
+    details: "https://github.com/Rajnish2000/IDOC_TOOL",
   },
   {
     title: "Urbanutopia",
@@ -24,7 +24,7 @@ const projects = [
       "`urbanutopia` is a RESTful API that connects property owners looking to rent their spaces with individuals seeking short-term accommodation.",
     image: "/images/projectImage/urbanutopia.png",
     demo: "https://urbanutopia-q4lw.onrender.com/",
-    details: "#",
+    details: "https://github.com/Rajnish2000/urbanutopia",
   },
   {
     title: "BlogApp",
@@ -44,7 +44,7 @@ export default function Projects() {
   }, [showMore]);
   return (
     <>
-      <div className="grid md:grid-cols-3 gap-6">
+      <div className="grid md:grid-cols-3 gap-4">
         {(showMore ? projects : projectTemp).map((project, index) => (
           <Card project={project} key={index} />
         ))}

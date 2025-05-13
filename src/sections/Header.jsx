@@ -20,7 +20,7 @@ const Header = () => {
 
   return (
     <section id="hero" className="relative overflow-hidden">
-      <div className="relative z-10 xl:mt-20 mt-32 md:h-dvh h-[100vh] flex md:items-center items-start justify-between">
+      <div className="relative z-10 xl:mt-20 mt-32 md:h-dvh h-[100vh] flex lg:items-center items-start justify-between">
         <div className="flex flex-wrap items-center justify-between px-10 py-20 md:px-30">
           {/* Text and Buttons */}
           <div className="max-w-xl px-8" ref={textContainerRef}>

@@ -1,5 +1,5 @@
 import React from "react";
-import PortfolioShowcase from "./PortfolioShowCase";
+import PortfolioShowcase from "./PortfolioShowcase";
 const Project = () => {
   return (
     <section className="w-full md:mt-20 mt-20 section-padding xl:px-0 relative">

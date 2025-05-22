@@ -39,8 +39,6 @@ export default function Footer() {
           <h4 className="font-semibold mb-4">DEVELOPMENT SKILLS</h4>
           <ul className="space-y-2">
             <li>Website Development</li>
-            <li>App Development</li>
-            <li>Others</li>
           </ul>
         </div>
 

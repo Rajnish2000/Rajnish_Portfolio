@@ -10,21 +10,29 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { useGSAP } from "@gsap/react";
 import NavBar from "./components/NavBar";
+
 gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollSmoother);
 const App = () => {
   const [scrollValue, setScrollValue] = useState(window.scrollY);
   useEffect(() => {
-    console.log(scrollValue);
     setScrollValue(window.screenY);
   }, []);
-  const main = useRef();
+  const main = useRef(null);
   const smoother = useRef();
   useGSAP(
     () => {
       smoother.current = ScrollSmoother.create({
-        smooth: 1,
+        wrapper: "#smooth-wrapper",
+        content: "#smooth-content",
+        smooth: 1.2,
         effects: true,
       });
+      return () => {
+        if (smoother.current) {
+          smoother.current.kill();
+          smoother.current = null;
+        }
+      };
     },
     { scope: main }
   );
@@ -37,11 +45,11 @@ const App = () => {
       >
         <NavBar />
         <div id="smooth-content">
-          <Header id="hero" />
-          <About id="about" />
-          <Experience id="experience" />
-          <Project id="project" />
-          <Contact id="contacts" />
+          <Header />
+          <About />
+          <Experience />
+          <Project />
+          <Contact />
           <Footer />
         </div>
       </div>

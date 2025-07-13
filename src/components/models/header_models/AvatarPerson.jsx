@@ -18,9 +18,7 @@ export function AvatarPerson(props) {
   const { animations } = useFBX("/models/Wave Hip Hop Dance.fbx");
   animations[0].name = "Dance";
   const action = useAnimations(animations, group);
-  console.log(animations);
   useEffect(() => {
-    console.log(action);
     action.actions["Dance"].play();
   }, []);
 

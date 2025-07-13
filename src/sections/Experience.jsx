@@ -38,7 +38,7 @@ const Experience = () => {
   }, []);
   return (
     <section
-      className="w-full md:mt-20 mt-20 section-padding xl:px-0 relative"
+      className="w-full md:mt-20 py-20 section-padding xl:px-0 relative"
       id="experience"
     >
       <div className="w-full h-full md:px-20 px-5">
@@ -55,7 +55,8 @@ const Experience = () => {
                 <div className="xl:w-5/6" key={i}>
                   <div className="flex item-start">
                     <div className="timeline-wrapper">
-                      <div className="timeline bg-[#020818]" />
+                      {/* Use Tailwind's responsive classes for background color */}
+                      <div className="timeline bg-[#020817] md:bg-[#020818] lg:bg-[#020817]" />
                       <div className="gradient-line w-1 h-full" />
                     </div>
                     <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20">

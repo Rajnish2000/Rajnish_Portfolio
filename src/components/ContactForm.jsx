@@ -1,13 +1,9 @@
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
-// import "dotenv/config";
-// template Id : template_7xjt2wt
-// public key: 6RPbReOUj4XzOWcK8
 
 export const ContactForm = () => {
   emailjs.init(import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY);
   const formRef = useRef();
-  console.log(import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY);
   const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({
     name: "",
@@ -47,7 +43,6 @@ export const ContactForm = () => {
         },
         (error) => {
           setLoading(false);
-          console.log(error);
           alert("Something went Wrong.");
         }
       );

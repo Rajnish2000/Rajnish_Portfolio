@@ -9,7 +9,6 @@ import { OfficeWorker } from "./OfficeWorker";
 
 const HeaderModelExperience = () => {
   const isTablet = useMediaQuery({ query: "(max-width:1024px)" });
-  console.log(isTablet);
   // const isMobile = useMediaQuery({ query: "(max-width:768px)" });
   return (
     <Canvas shadows camera={{ position: [0, 0, 15], fov: 45 }}>

@@ -41,6 +41,7 @@ export function OfficeWorker(props) {
         dispose={null}
         scale={[3.5, 3.5, 3.5]}
         rotation={[0, Math.PI, 0]}
+        position={[0, -2.5, 0]}
       >
         <group name="Sketchfab_Scene">
           <group name="GLTF_created_0">

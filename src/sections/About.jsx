@@ -5,7 +5,7 @@ import { BiSolidFilePdf } from "react-icons/bi";
 
 const About = () => {
   return (
-    <section className="px-8 md:px-20 py-14" id="about">
+    <section className="px-8 md:px-20 pt-20 pb-15" id="about">
       <h2 className="text-4xl font-bold mb-4 border-b-4 border-blue-500 inline-block">
         About Me
       </h2>

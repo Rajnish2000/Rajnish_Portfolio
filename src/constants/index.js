@@ -1,23 +1,23 @@
 const navLinks = [
   {
     name: "Home",
-    link: "#hero",
+    link: "hero",
   },
   {
     name: "About",
-    link: "#about",
+    link: "about",
   },
   {
     name: "Experience",
-    link: "#experience",
+    link: "experience",
   },
   {
     name: "Project",
-    link: "#project",
+    link: "project",
   },
   {
     name: "Contact Us",
-    link: "#contacts",
+    link: "contacts",
   },
 ];
 

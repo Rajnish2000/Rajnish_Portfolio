@@ -14,7 +14,7 @@ const projects = [
     title: "IDOC_TOOL",
     description:
       "The IDOC_TOOL project is an application designed to detect and extract text from images using Python libraries like OpenCV, Tesseract, and Streamlit.",
-    image: "/images/projectImage/IDOC_TOOL.png",
+    image: "/images/projectImage/IDOC_TOOL.jpg",
     demo: "#",
     details: "https://github.com/Rajnish2000/IDOC_TOOL",
   },

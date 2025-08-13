@@ -14,7 +14,7 @@ import { SiGooglecloud, SiLeetcode, SiMedium, SiRevue } from "react-icons/si";
 export default function Footer() {
   return (
     <footer className="bg-gradient-to-br from-[#040916] via-[#0f172a] to-[#1e293b] text-white rounded-t-3xl shadow-2xl px-4 md:px-20 py-12 text-sm">
-      <div className="grid md:grid-cols-4 grid-cols-1 gap-10 justify-center m-auto">
+      <div className="grid md:grid-cols-3 grid-cols-1 gap-5 justify-center m-auto">
         {/* Contact Details */}
         <div>
           <h4 className="font-semibold mb-4 text-blue-400">CONTACT DETAILS</h4>

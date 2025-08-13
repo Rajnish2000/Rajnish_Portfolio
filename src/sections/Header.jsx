@@ -27,10 +27,10 @@ const Header = () => {
   return (
     <section id="hero" className="relative overflow-hidden">
       <div className="relative z-10 xl:mt-20 mt-20 md:h-dvh h-[100vh] flex flex-col lg:flex-row lg:items-center items-start justify-between">
-        <div className="flex flex-col lg:flex-row items-center justify-between w-full px-4 md:px-10 py-15 md:py-20 gap-8 lg:gap-16">
+        <div className="flex flex-col lg:flex-row items-center justify-center w-full px-4 md:px-10 py-15 md:py-0 gap-8 lg:gap-16">
           {/* Text and Buttons */}
           <div
-            className="w-full lg:w-1/2 max-w-xl px-2 md:px-8"
+            className="w-full lg:w-1/2 max-w-xl px-2 md:px-8 z-3"
             ref={textContainerRef}
           >
             <p className="text-blue-400 text-base md:text-lg">Hello! I'm</p>
@@ -62,7 +62,7 @@ const Header = () => {
           </div>
 
           {/* 3D Model (No Animation Here) */}
-          <div className="w-full lg:w-1/2 flex justify-center items-center lg:min-h-[500px]">
+          <div className="w-full lg:w-1/2 flex justify-center items-center lg:min-h-[500px] z-0">
             <figure className="w-full h-full flex flex-col items-center justify-center">
               <div className="relative w-full h-[350px] md:h-[400px] lg:h-[500px] flex items-center justify-center">
                 <ShootingStars />

@@ -82,7 +82,7 @@ const About = () => {
           </div>
 
           <a
-            href="https://drive.usercontent.google.com/uc?id=1XjkGLFps8-reFab18N1r5YNZ5Sy3dDaZ&export=download" // Replace with actual path
+            href="https://drive.google.com/file/d/1cujCtuLGi55ACuZL5Eu8vP6DOLepJYGq&export=download" // Replace with actual path
             download
             className="mt-5 inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg transition"
             target="_blank"

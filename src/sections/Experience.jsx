@@ -47,48 +47,52 @@ const Experience = () => {
             Work Experience
           </h2>
         </div>
-        {/* <BackgroundLines> */}
-        <div className="mt-10 relative">
-          <div className="relative z-50 xl:space-y-32 space-y-10">
-            {expCards.map((card, i) => {
-              return (
-                <div className="xl:w-5/6" key={i}>
-                  <div className="flex item-start">
-                    <div className="timeline-wrapper">
-                      {/* Use Tailwind's responsive classes for background color */}
-                      <div className="timeline bg-[#020817] md:bg-[#020818] lg:bg-[#020817]" />
-                      <div className="gradient-line w-1 h-full" />
-                    </div>
-                    <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20">
-                      <div className="timeline-logo">
-                        <img
-                          src={card.logoPath}
-                          alt="logo"
-                          className="rounded-4xl"
-                        />
+        <BackgroundLines>
+          <div className="mt-10 relative">
+            <div className="relative z-50 xl:space-y-32 space-y-10">
+              {expCards.map((card, i) => {
+                return (
+                  <div className="xl:w-5/6" key={i}>
+                    <div className="flex item-start">
+                      <div className="timeline-wrapper">
+                        {/* Use Tailwind's responsive classes for background color */}
+                        <div className="timeline bg-[#020817] md:bg-[#020818] lg:bg-[#020817]" />
+                        <div className="gradient-line w-1 h-full" />
                       </div>
-                      <div className="">
-                        <h1 className="font-semibold text-3xl">{card.title}</h1>
-                        <p className="my-5 text-white-50">{card.date}</p>
-                        <p className="text-[#839cb5] italic">Responsibilites</p>
-                        <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50">
-                          {card.responsibilities.map((response) => {
-                            return (
-                              <li className="text-lg" key={response}>
-                                {response}
-                              </li>
-                            );
-                          })}
-                        </ul>
+                      <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20">
+                        <div className="timeline-logo">
+                          <img
+                            src={card.logoPath}
+                            alt="logo"
+                            className="rounded-4xl"
+                          />
+                        </div>
+                        <div className="">
+                          <h1 className="font-semibold text-3xl">
+                            {card.title}
+                          </h1>
+                          <p className="my-5 text-white-50">{card.date}</p>
+                          <p className="text-[#839cb5] italic">
+                            Responsibilites
+                          </p>
+                          <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white-50">
+                            {card.responsibilities.map((response) => {
+                              return (
+                                <li className="text-lg" key={response}>
+                                  {response}
+                                </li>
+                              );
+                            })}
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
-        </div>
-        {/* </BackgroundLines> */}
+        </BackgroundLines>
       </div>
     </section>
   );

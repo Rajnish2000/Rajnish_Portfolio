@@ -50,7 +50,7 @@ const About = () => {
               <div>
                 <p className="font-semibold">Backend Developer Intern</p>
                 <p className="text-gray-400">KaryaNest Solutions LLP.</p>
-                <p className="text-gray-400 mb-3">Oct 2024 -- Present</p>
+                <p className="text-gray-400 mb-3">Oct 2024 -- April 2025</p>
               </div>
             </div>
           </div>
@@ -65,7 +65,7 @@ const About = () => {
               className="w-32 h-32 object-cover rounded-full border-4 border-white"
             />
             <span className="absolute bottom-0 right-0 bg-blue-500 text-white text-sm px-2 py-1 rounded-full">
-              7.78 CGPA
+              7.31 CGPA
             </span>
           </div>
           <h3 className="text-xl font-bold mt-4">Rajnish Singh</h3>

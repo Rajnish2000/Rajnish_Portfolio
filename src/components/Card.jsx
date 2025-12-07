@@ -11,7 +11,7 @@ const Card = ({ project }) => (
     />
     <div className="p-4">
       <h2 className="text-lg font-semibold mb-2">{project.title}</h2>
-      <p className="text-sm text-gray-300 mb-4">{project.description}</p>
+      <p className="text-sm text-gray-200 mb-4">{project.description}</p>
       <div className="flex justify-between text-sm">
         <a
           href={project.demo}

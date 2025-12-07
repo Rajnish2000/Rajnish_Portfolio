@@ -40,7 +40,7 @@ const Header = () => {
             <p className="text-gray-400 text-lg md:text-xl mt-4">
               Full-Stack Developer & Software Engineering Student
             </p>
-            <p className="text-gray-500 text-base md:text-lg mt-4">
+            <p className="text-gray-600 md:text-gray-700 text-base md:text-lg mt-4">
               Building elegant solutions to complex problems with modern
               technologies.
             </p>

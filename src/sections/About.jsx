@@ -64,7 +64,7 @@ const About = () => {
               alt="Rajnish Singh"
               className="w-32 h-32 object-cover rounded-full border-4 border-white"
             />
-            <span className="absolute bottom-0 right-0 bg-blue-500 text-white text-sm px-2 py-1 rounded-full">
+            <span className="absolute bottom-0 right-0 bg-blue-600 text-white text-sm px-2 py-1 rounded-full">
               7.31 CGPA
             </span>
           </div>

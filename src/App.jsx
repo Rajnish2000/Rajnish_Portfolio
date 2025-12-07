@@ -1,16 +1,17 @@
-import React, { useEffect, useRef, useState } from "react";
-import Header from "./sections/Header";
-import About from "./sections/About";
-import Experience from "./sections/Experience";
-import Project from "./sections/Project";
-import Contact from "./sections/Contact";
-import Footer from "./sections/Footer";
+import React, { useEffect, useRef, useState, lazy, Suspense } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { useGSAP } from "@gsap/react";
 import NavBar from "./components/NavBar";
 import SplashCursor from "./components/SplashCursor";
+
+const Header = lazy(() => import("./sections/Header"));
+const About = lazy(() => import("./sections/About"));
+const Experience = lazy(() => import("./sections/Experience"));
+const Project = lazy(() => import("./sections/Project"));
+const Contact = lazy(() => import("./sections/Contact"));
+const Footer = lazy(() => import("./sections/Footer"));
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollSmoother);
 const App = () => {
@@ -47,12 +48,14 @@ const App = () => {
       >
         <NavBar />
         <div id="smooth-content">
-          <Header />
-          <About />
-          <Experience />
-          <Project />
-          <Contact />
-          <Footer />
+          <Suspense fallback={<div>Loading...</div>}>
+            <Header />
+            <About />
+            <Experience />
+            <Project />
+            <Contact />
+            <Footer />
+          </Suspense>
         </div>
       </div>
     </main>

@@ -38,7 +38,7 @@ const Experience = () => {
   }, []);
   return (
     <section
-      className="w-full md:mt-20 section-padding xl:px-0 relative"
+      className="w-full md:mt-40 mt-40 md:mb-20 section-padding xl:px-0 relative"
       id="experience"
     >
       <div className="w-full h-full md:px-20 px-5">

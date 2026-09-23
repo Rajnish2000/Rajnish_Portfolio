@@ -6,7 +6,7 @@ Files: avatar_person.glb [1.16MB] > E:\assignment\React Project\Portolio Project
 
 import React, { useEffect, useRef } from "react";
 import { useGraph } from "@react-three/fiber";
-import { useFBX, useGLTF, useAnimations } from "@react-three/drei";
+import { useAnimations, useFBX, useGLTF } from "@react-three/drei";
 import { SkeletonUtils } from "three-stdlib";
 
 export function AvatarPerson(props) {
@@ -14,13 +14,16 @@ export function AvatarPerson(props) {
   const { scene } = useGLTF("/models/avatar_person-transformed.glb");
   const clone = React.useMemo(() => SkeletonUtils.clone(scene), [scene]);
   const { nodes, materials } = useGraph(clone);
-
   const { animations } = useFBX("/models/Wave Hip Hop Dance.fbx");
-  animations[0].name = "Dance";
-  const action = useAnimations(animations, group);
+  const { actions } = useAnimations(animations, group);
+
   useEffect(() => {
-    action.actions["Dance"].play();
-  }, []);
+    const dance = actions?.Dance ?? Object.values(actions ?? {})[0];
+    if (!dance) return;
+
+    dance.reset().fadeIn(0.2).play();
+    return () => dance.fadeOut(0.2);
+  }, [actions]);
 
   return (
     <group {...props} ref={group} dispose={null}>
@@ -90,5 +93,3 @@ export function AvatarPerson(props) {
     </group>
   );
 }
-
-useGLTF.preload("/models/avatar_person-transformed.glb");

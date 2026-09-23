@@ -23,6 +23,16 @@ const navLinks = [
 
 const expCards = [
   {
+    logoPath: "/images/logos/pathlogo.png",
+    title: "Programmer (Path Infotech)",
+    date: "February 2026 - Present",
+    responsibilities: [
+      "Contributed to the design and development of RESTful APIs and microservices using Node.js, NestJS, and Express.js for Sprout, an insurance domain application, supporting system modularity and clean service architecture.",
+      "Designed and optimized SQL queries and database schemas, working with relational databases through ORMs such as TypeORM, Prisma, and Sequelize to ensure efficient data retrieval and persistence, while investigating and resolving production issues through root-cause analysis to maintain application stability.",
+      "Deployed application updates to production using CI/CD pipelines, ensuring smooth, reliable, and repeatable release cycles.",
+    ],
+  },
+  {
     logoPath: "/images/logos/wz-logo.png",
     title: "Full Stack Developer (Whizlancer)",
     date: "July 2025 - November 2025",

@@ -1,11 +1,24 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { navLinks } from "../constants";
 import ScrollSmoother from "gsap/ScrollSmoother";
 import gsap from "gsap";
+import { FiMoon, FiSun } from "react-icons/fi";
 
 gsap.registerPlugin(ScrollSmoother);
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [theme, setTheme] = useState(
+    () => localStorage.getItem("portfolio-theme") || "dark",
+  );
+
+  useEffect(() => {
+    document.documentElement.dataset.theme = theme;
+    localStorage.setItem("portfolio-theme", theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((currentTheme) => (currentTheme === "dark" ? "light" : "dark"));
+  };
 
   const handleScroll = (targetId) => {
     const target = document.getElementById(targetId);
@@ -29,6 +42,7 @@ const NavBar = () => {
             .Rajnish <span className="text-blue-500">Singh</span>
           </h1>
         </div>
+
         {/* Desktop Links */}
         <div className="md:flex items-center gap-7 hidden">
           {navLinks.map((item, index) => (
@@ -46,9 +60,27 @@ const NavBar = () => {
               </button>
             </div>
           ))}
+          <button
+            type="button"
+            onClick={toggleTheme}
+            className="theme-toggle text-xl"
+            aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} theme`}
+            title={`Switch to ${theme === "dark" ? "light" : "dark"} theme`}
+          >
+            {theme === "dark" ? <FiSun /> : <FiMoon />}
+          </button>
         </div>
         {/* Mobile Menu Button */}
         <div className="md:hidden flex items-center">
+          <button
+            type="button"
+            onClick={toggleTheme}
+            className="theme-toggle text-xl"
+            aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} theme`}
+            title={`Switch to ${theme === "dark" ? "light" : "dark"} theme`}
+          >
+            {theme === "dark" ? <FiSun /> : <FiMoon />}
+          </button>
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="text-white focus:outline-none"

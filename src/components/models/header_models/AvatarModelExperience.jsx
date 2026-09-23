@@ -6,7 +6,11 @@ import { AmbientLight } from "three";
 
 const AvatarModelExperience = () => {
   return (
-    <Canvas shadows camera={{ position: [0, 0, 22], fov: 45 }} className="h-36">
+    <Canvas
+      dpr={[1, 1.5]}
+      camera={{ position: [0, 0, 22], fov: 45 }}
+      className="h-36"
+    >
       <ambientLight />
       <directionalLight position={[-2, 0, 3]} intensity={3} color={"#ff28d5"} />
       <directionalLight position={[2, 0, 3]} intensity={3} color={"#1c34ff"} />

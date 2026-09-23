@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef } from "react";
 import Header from "./sections/Header";
 import About from "./sections/About";
 import Experience from "./sections/Experience";
@@ -14,10 +14,6 @@ import SplashCursor from "./components/SplashCursor";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollSmoother);
 const App = () => {
-  const [scrollValue, setScrollValue] = useState(0);
-  useEffect(() => {
-    setScrollValue(window.screenY);
-  }, []);
   const main = useRef(null);
   const smoother = useRef();
   useGSAP(
@@ -35,13 +31,13 @@ const App = () => {
         }
       };
     },
-    { scope: main }
+    { scope: main },
   );
   return (
     <main>
-      <SplashCursor />
+      <SplashCursor enabled={false} />
       <div
-        className="bg-[#0f172a] text-white font-sans"
+        className="theme-app bg-[#0f172a] text-white font-sans"
         id="smooth-wrapper"
         ref={main}
       >

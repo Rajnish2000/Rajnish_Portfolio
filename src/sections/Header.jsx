@@ -1,16 +1,58 @@
-import React, { useRef } from "react";
+import React, { useRef, Suspense, useState, useEffect, lazy } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import HeaderModelExperience from "./../components/models/header_models/HeaderModelExperience";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
 import ScrollSmoother from "gsap/ScrollSmoother";
+
+const HeaderModelExperience = lazy(
+  () => import("./../components/models/header_models/HeaderModelExperience"),
+);
+
 const Header = () => {
   const textContainerRef = useRef();
+  const [shouldLoadModel, setShouldLoadModel] = useState(false);
+
+  useEffect(() => {
+    const target = document.getElementById("hero-3d");
+    if (!target) return;
+    let cancelModelLoad = () => {};
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          observer.disconnect();
+
+          if ("requestIdleCallback" in window) {
+            const idleCallback = window.requestIdleCallback(
+              () => setShouldLoadModel(true),
+              { timeout: 2000 },
+            );
+            cancelModelLoad = () => window.cancelIdleCallback(idleCallback);
+            return;
+          }
+
+          const timeout = window.setTimeout(
+            () => setShouldLoadModel(true),
+            1200,
+          );
+          cancelModelLoad = () => window.clearTimeout(timeout);
+        }
+      },
+      { rootMargin: "200px" },
+    );
+
+    observer.observe(target);
+    return () => {
+      observer.disconnect();
+      cancelModelLoad();
+    };
+  }, []);
+
   const handleScroll = (targetId) => {
     const target = document.getElementById(targetId);
     if (target) {
-      const smoother = ScrollSmoother.get(); // get the existing instance
+      const smoother = ScrollSmoother.get();
       smoother.scrollTo(target, true, "top");
     }
   };
@@ -64,11 +106,16 @@ const Header = () => {
           {/* 3D Model (No Animation Here) */}
           <div className="w-full lg:w-1/2 flex justify-center items-center lg:min-h-[500px] z-0">
             <figure className="w-full h-full flex flex-col items-center justify-center">
-              <div className="relative w-full h-[350px] md:h-[400px] lg:h-[500px] flex items-center justify-center">
+              <div
+                id="hero-3d"
+                className="relative w-full h-[350px] md:h-[400px] lg:h-[500px] flex items-center justify-center"
+              >
                 <ShootingStars />
                 <StarsBackground />
                 <div className="hero-3d-layout absolute inset-0 w-full h-full">
-                  <HeaderModelExperience />
+                  <Suspense fallback={null}>
+                    {shouldLoadModel ? <HeaderModelExperience /> : null}
+                  </Suspense>
                 </div>
               </div>
             </figure>

@@ -37,6 +37,8 @@ const techs2 = [
   { name: "Figma", icon: "/images/logos/Figma.png" },
   { name: "Wordpress", icon: "/images/logos/wordpress.png" },
   { name: "Jupyter", icon: "/images/logos/Jupyter.png" },
+  { name: "Java", icon: "/images/logos/javalogo.png" },
+  { name: "Spring Boot", icon: "/images/logos/springlogo.png" },
 ];
 
 export default function TechStack() {

@@ -36,7 +36,7 @@ const NavBar = () => {
           <img
             src="/images/myimage.jpg"
             alt="logo"
-            className="md:size-12 size-8 object-cover object-center"
+            className="md:size-12 size-8 rounded-full object-cover object-center border border-white/20 shadow-sm"
           />
           <h1 className="text-2xl font-bold text-white">
             .Rajnish <span className="text-blue-500">Singh</span>

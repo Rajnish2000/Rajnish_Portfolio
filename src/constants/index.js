@@ -35,7 +35,7 @@ const expCards = [
   {
     logoPath: "/images/logos/wz-logo.png",
     title: "Full Stack Developer (Whizlancer)",
-    date: "July 2025 - November 2025",
+    date: "July 2025 - December 2025",
     responsibilities: [
       "Developed the complete Veriqos digital-identity & KYC/AML verification platform using the MERN stack, including website development, API integration (Aadhaar, PAN, face-match, liveness), dashboards, and backend services.",
       "Designed and built core SchoolERP modules such as dashboards, result-generation system, event scheduling, notice board, and transport management with fully integrated backend services.",
@@ -45,7 +45,7 @@ const expCards = [
   {
     logoPath: "/images/logos/KS.png",
     title: "Backend Developer Intern (KaryaNest Solutions LLP.)",
-    date: "October 2024 - April 2025",
+    date: "October 2024 - June 2025",
     responsibilities: [
       "Worked on the Jenzabar project, focused on enhancing education management solutions.",
       "Responsible for bug fixing, developing backend services, and writing comprehensive unit test cases.",
@@ -55,7 +55,7 @@ const expCards = [
   {
     logoPath: "/images/logos/webiers.png",
     title: "Full Stack Developer Intern (Webiers)",
-    date: "March 2022 - October 2022",
+    date: "March 2022 - November 2022",
     responsibilities: [
       "Gained hands-on experience with Angular, Angular Material, NestJS, Node.js, and RxJS.",
       "Assisted in developing responsive web applications using Tailwind CSS and TypeScript.",

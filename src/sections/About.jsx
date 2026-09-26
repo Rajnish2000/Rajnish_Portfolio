@@ -34,7 +34,7 @@ const About = () => {
               <p className="text-gray-400">
                 BIT (Buddha Institute of Information Technology)
               </p>
-              <p className="text-gray-400">2022 - Present</p>
+              <p className="text-gray-400">2022 - 2025</p>
             </div>
 
             {/* Experience */}

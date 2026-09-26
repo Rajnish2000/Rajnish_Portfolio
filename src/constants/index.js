@@ -44,7 +44,7 @@ const expCards = [
   },
   {
     logoPath: "/images/logos/KS.png",
-    title: "Backend Developer Intern (KaryaNest Solutions LLP.)",
+    title: "Backend Developer (KaryaNest Solutions LLP.)",
     date: "October 2024 - June 2025",
     responsibilities: [
       "Worked on the Jenzabar project, focused on enhancing education management solutions.",
@@ -54,7 +54,7 @@ const expCards = [
   },
   {
     logoPath: "/images/logos/webiers.png",
-    title: "Full Stack Developer Intern (Webiers)",
+    title: "Software Developer (Webiers)",
     date: "March 2022 - November 2022",
     responsibilities: [
       "Gained hands-on experience with Angular, Angular Material, NestJS, Node.js, and RxJS.",

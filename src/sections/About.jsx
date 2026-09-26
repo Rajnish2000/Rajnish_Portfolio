@@ -43,14 +43,14 @@ const About = () => {
                 <FaBriefcase className="mr-2" /> Experience
               </h4>
               <div>
-                <p className="font-semibold">Full Stack Developer Intern</p>
-                <p className="text-gray-400">Webiers Pvt. Ltd.</p>
-                <p className="text-gray-400 mb-3">March 2022 -- Oct 2022</p>
+                <p className="font-semibold">Programmer</p>
+                <p className="text-gray-400">Path Infotech Ltd.</p>
+                <p className="text-gray-400 mb-3">Feb 2022 -- Present</p>
               </div>
               <div>
-                <p className="font-semibold">Backend Developer Intern</p>
-                <p className="text-gray-400">KaryaNest Solutions LLP.</p>
-                <p className="text-gray-400 mb-3">Oct 2024 -- April 2025</p>
+                <p className="font-semibold">Full Stack Developer</p>
+                <p className="text-gray-400">Webiers Pvt. Ltd.</p>
+                <p className="text-gray-400 mb-3">July 2025 -- December 2025</p>
               </div>
             </div>
           </div>

@@ -27,8 +27,9 @@ const expCards = [
     title: "Programmer (Path Infotech)",
     date: "February 2026 - Present",
     responsibilities: [
-      "Contributed to the design and development of RESTful APIs and microservices using Node.js, NestJS, and Express.js for Sprout, an insurance domain application, supporting system modularity and clean service architecture.",
-      "Designed and optimized SQL queries and database schemas, working with relational databases through ORMs such as TypeORM, Prisma, and Sequelize to ensure efficient data retrieval and persistence, while investigating and resolving production issues through root-cause analysis to maintain application stability.",
+      "Contributed to the design and development of RESTful APIs and microservices using Java and Spring Boot for Sprout, an insurance domain application, supporting system modularity and clean service architecture.",
+      "Designed and optimized SQL queries and database schemas, working with relational databases via Hibernate/JPA to ensure efficient data retrieval and persistence.",
+      "Investigated and resolved production issues, performing root-cause analysis to minimize downtime and maintain application stability in a live environment.",
       "Deployed application updates to production using CI/CD pipelines, ensuring smooth, reliable, and repeatable release cycles.",
     ],
   },
